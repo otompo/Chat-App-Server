@@ -12,7 +12,7 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.log("DB CONNECTION ERROR: ", err));
 
-app.use("/api", (req, res) => {
+app.use("/", (req, res) => {
   return res.send("CHAT APP");
 });
 
